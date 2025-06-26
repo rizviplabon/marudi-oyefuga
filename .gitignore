@@ -1,0 +1,67 @@
+# CodeIgniter specific
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# Database files
+*.sql
+*.db
+*.sqlite
+
+# Configuration files with sensitive data
+application/config/database.php
+application/config/config.php
+
+# Upload directories
+uploads/*
+!uploads/.htaccess
+
+# Temporary files
+temp/*
+tmp/*
+
+# Node modules (if any)
+node_modules/
+
+# Vendor (if using Composer)
+vendor/
+!vendor/autoload.php
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Files directory
+files/backups/*
+files/downloads/*
+!files/downloads/.htaccess
+
+# Invoice files
+invoicefile/*
+
+# Specific temporary directories
+temp/ttfontdata/*
+!temp/ttfontdata/.htaccess 

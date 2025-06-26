@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2021, 12:45:16 AM
+    Author     : sahas
+    Updated with Dark Mode Support
+*/
+.img_url{
+    height:20px;
+    width:20px;
+    background-size: contain; 
+    max-height:20px;
+    border-radius: 100px;
+}
+
+#myModal,#myModal2{
+    display: none;
+}
+
+/* Dark Mode Specific Styles for Department Page */
+body.dark-skin .card-header.table_header {
+    background-color: #0c1a32;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .table-responsive.adv-table.rounded.card-table {
+    background-color: #112547;
+}
+
+body.dark-skin #editable-sample thead th {
+    background-color: #0c1a32;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+body.dark-skin #editable-sample tbody tr {
+    background-color: #112547;
+    color: #b5b5c3;
+}
+
+body.dark-skin #editable-sample tbody tr:hover {
+    background-color: #1a3365;
+}
+
+body.dark-skin .dropdown-menu {
+    background-color: #0c1a32;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .dropdown-item {
+    color: #b5b5c3;
+}
+
+body.dark-skin .dropdown-item:hover {
+    background-color: #1a3365;
+    color: #ffffff;
+}
+
+body.dark-skin .btn-soft-primary,
+body.dark-skin .btn-soft-success,
+body.dark-skin .btn-soft-danger {
+    background-color: #1a3365;
+    color: #b5b5c3;
+}
+
+body.dark-skin .btn-soft-primary:hover,
+body.dark-skin .btn-soft-success:hover,
+body.dark-skin .btn-soft-danger:hover {
+    color: #ffffff;
+}
+
+body.dark-skin .ckeditor {
+    background-color: #0c1a32;
+    color: #b5b5c3;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .modal-content {
+    background-color: #112547;
+}
+
+body.dark-skin .modal-header,
+body.dark-skin .modal-footer {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .form-control {
+    background-color: #0c1a32;
+    color: #b5b5c3;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .btn-light {
+    background-color: #1a3365;
+    color: #b5b5c3;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-skin .btn-info {
+    background-color: #5A8DEE;
+    color: #ffffff;
+    border-color: #5A8DEE;
+}
+

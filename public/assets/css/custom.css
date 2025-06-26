@@ -1,0 +1,28 @@
+/* Custom styles for active menu items */
+
+/* Change the active menu color to make it more distinctive */
+#sidebar-menu ul li.mm-active > a {
+  color: #3577f1 !important; /* Bright blue color */
+  font-weight: bold !important;
+  background-color: rgba(53, 119, 241, 0.1) !important; /* Light blue background */
+}
+
+#sidebar-menu ul li a.active {
+  color: #3577f1 !important; /* Bright blue color */
+  font-weight: bold !important;
+  background-color: rgba(53, 119, 241, 0.1) !important; /* Light blue background */
+}
+
+/* Add a left border to make active items even more distinctive */
+#sidebar-menu ul li.mm-active > a,
+#sidebar-menu ul li a.active {
+  border-left: 3px solid #3577f1 !important;
+  padding-left: 12px !important; /* Adjust padding to account for border */
+}
+
+/* Ensure submenu active items are styled consistently */
+#sidebar-menu ul li.mm-active .mm-show .mm-active > a {
+  color: #3577f1 !important;
+  font-weight: bold !important;
+  background-color: rgba(53, 119, 241, 0.1) !important;
+} 

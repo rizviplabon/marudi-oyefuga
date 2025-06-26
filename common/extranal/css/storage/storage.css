@@ -1,0 +1,104 @@
+/* Storage Module Styles */
+
+.storage-stats-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.storage-stats-card .card-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.storage-stats-card .stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.storage-stats-card .stat-label {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* File list styles */
+.file-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.file-icon.image {
+    color: #28a745;
+}
+
+.file-icon.document {
+    color: #007bff;
+}
+
+.file-icon.spreadsheet {
+    color: #17a2b8;
+}
+
+.file-icon.pdf {
+    color: #dc3545;
+}
+
+.file-icon.archive {
+    color: #6c757d;
+}
+
+.file-icon.default {
+    color: #6c757d;
+}
+
+/* Provider label styles */
+.provider-label {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.provider-label.googledrive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.provider-label.local {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.provider-label.amazons3 {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.provider-label.onedrive {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Upload button styles */
+.upload-btn-container {
+    margin-bottom: 20px;
+}
+
+/* Provider filter buttons */
+.provider-filter-btn {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+/* File size formatting */
+.file-size {
+    white-space: nowrap;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 767px) {
+    .action-buttons .btn {
+        margin-bottom: 5px;
+    }
+} 
