@@ -951,7 +951,7 @@
                             </a>
                             <ul class="sub-menu" data-menu="patient" aria-expanded="false">
                                 <li><a href="patient" data-key="t-inbox"><?php echo lang('patient_list'); ?></a></li>
-                                <?php if ($this->ion_auth->in_group(array('admin', 'Accountant', 'Doctor', 'Receptionist'))) { ?>
+                                <?php if ($this->ion_auth->in_group(array('admin', 'Accountant', 'Doctor', 'Receptionist', 'Nurse'))) { ?>
                                 <li><a href="patient/patientPayments"
                                         data-key="t-read-email"><?php echo lang('payments'); ?></a></li>
                                 <li><a href="account/accountOverview"
@@ -966,8 +966,7 @@
                                 <?php } ?>
                             </ul>
                         </li>
-                        <?php } ?>
-                        <?php } ?>
+                        <?php } } ?>
 
                         <?php if ($this->ion_auth->in_group(array('admin', 'Nurse', 'Receptionist'))) { ?>
                         <?php if (in_array('appointment', $this->modules)) { ?>
@@ -1164,8 +1163,8 @@
                         <?php } ?>
                         <?php } ?>
 
-                        <?php if ($this->ion_auth->in_group('Receptionist')) { ?>
-                        <?php if (in_array('appointment', $this->modules)) { ?>
+                        <?php if ($this->ion_auth->in_group(array('Receptionist', 'Nurse'))) { ?>
+                        <?php if (in_array('appointment', $this->modules) && $this->ion_auth->in_group('Receptionist')) { ?>
                         <li class="sub-menu" data-menu="calender">
                             <a href="appointment/calendar">
                                 <i class="fa fa-calendar icon nav-icon"></i>
@@ -1208,8 +1207,7 @@
                         </li>
                         <?php } ?>
                         <?php } ?>
-                        <?php if ($this->ion_auth->in_group(array('Receptionist'))) {
-                            ?>
+                        <?php if ($this->ion_auth->in_group(array('Receptionist', 'Nurse'))) { ?>
                         <?php if (in_array('lab', $this->modules)) { ?>
                         <li class="sub-menu" data-menu="labreport">
                             <a href="lab/lab1">
@@ -1218,12 +1216,10 @@
                             </a>
                         </li>
                         <?php } ?>
-                        <?php
-                            }
-                            ?>
+                        <?php } ?>
 
 
-                        <?php if ($this->ion_auth->in_group(array('Accountant', 'Receptionist'))) { ?>
+                        <?php if ($this->ion_auth->in_group(array('Accountant', 'Receptionist', 'Nurse'))) { ?>
 
                         <?php if (in_array('finance', $this->modules)) { ?>
                         <li class="sub-menu" data-menu="userreport">
