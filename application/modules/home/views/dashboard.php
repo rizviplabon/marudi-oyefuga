@@ -1197,31 +1197,6 @@
                         <?php } ?>
                         <?php } ?>
 
-                        <?php if ($this->ion_auth->in_group('Nurse')) { ?>
-                        <?php if (in_array('finance', $this->modules)) { ?>
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow">
-                                <i class="fa fa-money-check icon nav-icon"></i>
-                                <span class="menu-item"
-                                    data-key="t-email"><?php echo lang('financial_activities'); ?></span>
-                            </a>
-                            <ul class="sub-menu" data-menu="nursefinancer" aria-expanded="false">
-                                <li><a href="finance/payment"
-                                        data-key="t-read-email"><?php echo lang('payments'); ?></a></li>
-                                <li><a href="finance/addPaymentView"
-                                        data-key="t-inbox"><?php echo lang('add_payment'); ?></a></li>
-
-                                <li><a href="finance/dueCollection"
-                                        data-key="t-read-email"><?php echo lang('due_collection'); ?></a></li>
-                                <li><a href="account"
-                                        data-key="t-read-email"><?php echo lang('account_balance'); ?></a></li>
-
-
-                            </ul>
-                        </li>
-                        <?php } ?>
-                        <?php } ?>
-
                         <?php if ($this->ion_auth->in_group(array('admin', 'Pharmacist'))) { ?>
                         <?php if (in_array('prescription', $this->modules)) { ?>
                         <li class="sub-menu" data-menu="prescribtion">
